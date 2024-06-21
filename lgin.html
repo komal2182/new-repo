@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login or Sign Up</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    h1 {
+      color: #333;
+    }
+    hh{ color: pink;
+font-size: 20px;
+text-align: center;
+}
+
+    #loginForm, #signupForm {
+      margin: 20px auto;
+      width: 300px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      background-color: #fff;
+    }
+
+    input[type="text"], input[type="password"], input[type="submit"] {
+      display: block;
+      margin: 10px auto;
+      width: 80%;
+      padding: 8px;
+      font-size: 16px;
+    }
+
+    button {
+      background-color: pink;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>You Are Important!</h1>
+  <img style="width: 15em;" src="C:\Users\HP\Desktop\mental health walpapers\Mental Health & Substance Abuse Resources in Florida.jpeg.jpeg">
+  <p><hh>Step into a better version of you...</p></p></div>
+  
+  <!-- Login form -->
+  <form action="/login" method="POST" id="loginForm">
+    <h2>Login</h2>
+    <input type="text" name="username" placeholder="Username" required>
+    <input type="password" name="password" placeholder="Password" required>
+    <input type="submit" value="Login">
+  </form>
+  
+  <!-- Signup form -->
+  <form action="/signup" method="POST" id="signupForm" style="display: none;">
+    <h2>Sign Up</h2>
+    <input type="text" name="username" placeholder="Username" required>
+    <input type="password" name="password" placeholder="Password" required>
+    <input type="submit" value="Sign Up">
+  </form>
+
+  <button onclick="toggleForms()">Switch to Sign Up / Login</button>
+
+  <script>
+    // JavaScript to toggle between login and signup forms
+    function toggleForms() {
+      const loginForm = document.getElementById('loginForm');
+      const signupForm = document.getElementById('signupForm');
+
+      if (loginForm.style.display === 'none') {
+        loginForm.style.display = 'block';
+        signupForm.style.display = 'none';
+      } else {
+        loginForm.style.display = 'none';
+        signupForm.style.display = 'block';
+      }
+    }
+  </script>
+</body>
+</html>
